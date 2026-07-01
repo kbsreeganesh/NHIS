@@ -814,7 +814,7 @@ function rDrawer(p){
   const enhFlag=yn(p.enhancement_flag);
   const docs=`<div class="drawer-section"><h4>Length of stay (LOS)</h4>
     <p>${p.los!=null?p.los+' day(s)':'—'}</p>
-    ${enhFlag?'<div class="enh-badge">&#9888; Enhancement of Sum Insured applicable for this procedure</div>':''}
+    ${enhFlag?'<div class="enh-badge">&#9888; Enhancement of Length of Stay (LOS) applicable</div>':''}
     </div>
     <div class="drawer-section"><h4>Mandatory documents</h4><div class="doc-cols">
       <div><h5>Pre-authorisation</h5><ul>${listify(p.docs_preauth).map(d=>`<li>${d}</li>`).join('')||'<li>—</li>'}</ul></div>
